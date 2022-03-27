@@ -3,7 +3,7 @@ name: Cron Crawling
 on:
   schedule:
     # every 5 min
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   cron:
@@ -40,4 +40,3 @@ jobs:
           author_name: Billboard Crawler
           author_email: coderhyun476@gmail.com
           message: 'Billboard crawling at ${{ steps.date.outputs.date }}'
-
