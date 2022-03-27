@@ -2,8 +2,8 @@ name: Cron Crawling
 
 on:
   schedule:
-    # every 10 min
-    - cron: '*/2 * * * *'
+    # every 5 min
+    - cron: '*/5 * * * *'
 
 jobs:
   cron:
