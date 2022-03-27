@@ -36,7 +36,5 @@ jobs:
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9.0.0
         with:
-          add: 'data'
           author_name: Billboard Crawler
-          author_email: coderhyun476@gmail.com
           message: 'Billboard crawling at ${{ steps.date.outputs.date }}'
