@@ -1,0 +1,5 @@
+# packages
+node_modules/
+# build files
+lib/
+.env
