@@ -3,7 +3,7 @@
 ![Stars](https://img.shields.io/github/stars/krtk-dev/billboard-player?style=social)
 
 # Billboard json
-> Get json type billboard hot 100 chart
+> Get json type billboard hot 100 chart, Data update every day !!
 
 # Url
 - Hot 100 : https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/hot100/recent.json
