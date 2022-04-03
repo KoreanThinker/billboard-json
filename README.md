@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/billboard-ho
 ```
 - [Billboard 200](https://www.billboard.com/charts/the-billboard-200/)
 ```url
-https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/billboard200/recent.json
+https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/billboard-200/recent.json
 ```
 - [Billboard Global 200](https://www.billboard.com/charts/billboard-global-200/)
 ```url
