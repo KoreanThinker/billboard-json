@@ -69,7 +69,10 @@ export const hot100Crawling = async (): Promise<Data[]> => {
   const newData = await hot100Crawling();
   // get youtube id & image from cache
   const prevData: SaveData = JSON.parse(
-    fs.readFileSync(path.join(__dirname, '../hot100', 'recent.json'), 'utf-8'),
+    fs.readFileSync(
+      path.join(__dirname, '../billboard-hot-100', 'recent.json'),
+      'utf-8',
+    ),
   );
 
   // check changed
@@ -86,14 +89,14 @@ export const hot100Crawling = async (): Promise<Data[]> => {
   console.log('Add new Data ✅');
   // Save old data
   fs.writeFileSync(
-    path.join(__dirname, '../hot100', prevData.date + '.json'),
+    path.join(__dirname, '../billboard-hot-100', prevData.date + '.json'),
     JSON.stringify(prevData),
     'utf-8',
   );
   // Save new Data
   const date = dayjs().format('YYYY-MM-DD');
   fs.writeFileSync(
-    path.join(__dirname, '../hot100', 'recent.json'),
+    path.join(__dirname, '../billboard-hot-100', 'recent.json'),
     JSON.stringify({date, data: newData}),
     'utf-8',
   );

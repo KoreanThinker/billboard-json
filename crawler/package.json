@@ -1,7 +1,7 @@
 {
   "name": "crawler",
   "scripts": {
-    "crawling": "ts-node index.ts",
+    "billboard-hot-100": "ts-node index.ts",
     "lint": "eslint --ext .js,.ts ."
   },
   "engines": {

@@ -1,4 +1,4 @@
-name: Cron Crawling
+name: Billboard Hot 100
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
         run: yarn
 
       - name: Run crawling
-        run: yarn crawling
+        run: yarn billboard-hot-100
       
       - name: Get current date
         id: date
@@ -36,5 +36,5 @@ jobs:
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9.0.0
         with:
-          author_name: Billboard Crawler
-          message: 'Billboard crawling at ${{ steps.date.outputs.date }}'
+          author_name: Billboard Hot 100 Crawler
+          message: 'Billboard Hot 100 crawled at ${{ steps.date.outputs.date }}'
