@@ -3,7 +3,7 @@ name: Billboard Global 200
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '2,32 * * * *'
 
 jobs:
   cron:
@@ -36,7 +36,5 @@ jobs:
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9.0.0
         with:
-          push: 'origin +main'
           author_name: 'Billboard Global 200 Crawler'
-          committer_name: 'Billboard Global 200 Crawler'
           message: 'Billboard Global 200 crawled at ${{ steps.date.outputs.date }}'

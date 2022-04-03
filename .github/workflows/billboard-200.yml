@@ -3,7 +3,7 @@ name: Billboard 200
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0,30 * * * *'
 
 jobs:
   cron:

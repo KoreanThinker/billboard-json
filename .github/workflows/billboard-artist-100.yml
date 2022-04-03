@@ -3,7 +3,7 @@ name: Billboard Artist 100
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '1,31 * * * *'
 
 jobs:
   cron:
