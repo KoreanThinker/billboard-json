@@ -1,6 +1,5 @@
 [![Cron Crawling](https://github.com/koreanthinker/billboard-json/actions/workflows/cron-crawling.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/cron-crawling.yml)
 [![Example](https://img.shields.io/badge/example-here!-blue)](https://github.com/krtk-dev/billboard-player)
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkoreanthinker%2Fbillboard-json&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
 ![Stars](https://img.shields.io/github/stars/krtk-dev/billboard-player?style=social)
 
 # Billboard json
@@ -12,6 +11,18 @@
 - Billboard global 200 : *TODO*
 - Artist 100 : *TODO*
 - Social 50 : *TODO*
+
+# Usage
+### Curl
+```bash
+$ curl https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/hot100/recent.json
+```
+### fetch
+```js
+fetch('https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/hot100/recent.json')
+  .then(res => res.json())
+  .then(data => console.log(data))
+```
 
 # Type
 ```json
