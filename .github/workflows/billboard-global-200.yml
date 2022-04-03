@@ -36,5 +36,7 @@ jobs:
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9.0.0
         with:
-          author_name: Billboard Global 200 Crawler
+          push: 'origin +main'
+          author_name: 'Billboard Global 200 Crawler'
+          committer_name: 'Billboard Global 200 Crawler'
           message: 'Billboard Global 200 crawled at ${{ steps.date.outputs.date }}'
