@@ -1,0 +1,40 @@
+name: Billboard Global 200
+
+on:
+  schedule:
+    # every 5 min
+    - cron: '*/15 * * * *'
+
+jobs:
+  cron:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        node: ["16"]
+    name: Node ${{ matrix.node }} (${{ matrix.platform }})
+    runs-on: ${{ matrix.platform }}
+    defaults:
+      run:
+        working-directory: crawler
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install modules
+        run: yarn
+
+      - name: Run crawling
+        run: yarn billboard-global-200
+      
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9.0.0
+        with:
+          author_name: Billboard Global 200 Crawler
+          message: 'Billboard Global 200 crawled at ${{ steps.date.outputs.date }}'

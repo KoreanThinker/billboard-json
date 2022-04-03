@@ -1,7 +1,10 @@
 {
   "name": "crawler",
   "scripts": {
-    "billboard-hot-100": "ts-node index.ts",
+    "billboard-hot-100": "ts-node billboard-hot-100.ts",
+    "billboard-200": "ts-node billboard-200.ts",
+    "billboard-global-200": "ts-node billboard-global-200.ts",
+    "billboard-artist-100": "ts-node billboard-artist-100.ts",
     "lint": "eslint --ext .js,.ts ."
   },
   "engines": {

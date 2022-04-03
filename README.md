@@ -1,5 +1,7 @@
-[![Cron Crawling](https://github.com/koreanthinker/billboard-json/actions/workflows/cron-crawling.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/cron-crawling.yml)
-[![Example](https://img.shields.io/badge/example-here!-blue)](https://github.com/krtk-dev/billboard-player)
+[![Billboard Hot 100](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-hot-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-hot-100.yml)
+[![Billboard 200](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-200.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-200.yml)
+[![Billboard Global 200](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-200.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-200.yml)
+[![Billboard Artist 100](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-artist-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-artist-100.yml)
 ![Stars](https://img.shields.io/github/stars/krtk-dev/billboard-player?style=social)
 
 # Billboard json
