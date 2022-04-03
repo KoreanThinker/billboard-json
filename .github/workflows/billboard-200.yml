@@ -2,8 +2,7 @@ name: Billboard 200
 
 on:
   schedule:
-    # every 5 min
-    - cron: '*/15 * * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   cron:
