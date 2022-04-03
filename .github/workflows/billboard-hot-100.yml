@@ -2,7 +2,7 @@ name: Billboard Hot 100
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '1 * * * *'
 
 jobs:
   cron:
