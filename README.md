@@ -2,7 +2,9 @@
 [![Billboard 200](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-200.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-200.yml)
 [![Billboard Global 200](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-200.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-200.yml)
 [![Billboard Artist 100](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-artist-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-artist-100.yml)
+
 ![Stars](https://img.shields.io/github/stars/krtk-dev/billboard-player?style=social)
+![Twitter](https://img.shields.io/twitter/follow/koreanthinker?style=social)
 
 # Billboard json
 > Get json type billboard hot 100 chart, Data update every day !!
