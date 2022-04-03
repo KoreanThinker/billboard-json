@@ -3,7 +3,9 @@ import cheerio from 'cheerio';
 import {removeLineFeed, save, TrackData} from '.';
 
 (async () => {
-  const res = await axios('https://www.billboard.com/charts/hot-100');
+  const res = await axios(
+    'https://www.billboard.com/charts/billboard-global-200/',
+  );
 
   const $ = cheerio.load(res.data);
 
@@ -37,5 +39,5 @@ import {removeLineFeed, save, TrackData} from '.';
       ),
     });
   });
-  save(data, 'billboard-hot-100');
+  save(data, 'billboard-global-200');
 })();

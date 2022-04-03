@@ -37,5 +37,5 @@ import {removeLineFeed, save, TrackData} from '.';
       ),
     });
   });
-  save(data, '../billboard-200');
+  save(data, 'billboard-200');
 })();

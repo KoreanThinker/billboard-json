@@ -35,7 +35,10 @@ export const save = (newData: Data[], folderName: string) => {
   try {
     // when recent.json exist
     const prevData: SaveData = JSON.parse(
-      fs.readFileSync(path.join(__dirname, folderName, 'recent.json'), 'utf-8'),
+      fs.readFileSync(
+        path.join(__dirname, '..', folderName, 'recent.json'),
+        'utf-8',
+      ),
     );
 
     // check changed
@@ -49,14 +52,14 @@ export const save = (newData: Data[], folderName: string) => {
     console.log('Add new Data ✅');
     // Save old data
     fs.writeFileSync(
-      path.join(__dirname, folderName, prevData.date + '.json'),
+      path.join(__dirname, '..', folderName, prevData.date + '.json'),
       JSON.stringify(prevData),
       'utf-8',
     );
     // Save new Data
     const date = dayjs().format('YYYY-MM-DD');
     fs.writeFileSync(
-      path.join(__dirname, folderName, 'recent.json'),
+      path.join(__dirname, '..', folderName, 'recent.json'),
       JSON.stringify({date, data: newData}),
       'utf-8',
     );
@@ -64,7 +67,7 @@ export const save = (newData: Data[], folderName: string) => {
     // when first time crawling
     const date = dayjs().format('YYYY-MM-DD');
     fs.writeFileSync(
-      path.join(__dirname, folderName, 'recent.json'),
+      path.join(__dirname, '..', folderName, 'recent.json'),
       JSON.stringify({date, data: newData}),
       'utf-8',
     );
