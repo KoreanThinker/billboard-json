@@ -1,8 +1,8 @@
-[![Hot 100](https://github.com/koreanthinker/billboard-json/actions/workflows/hot-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/hot-100.yml)
+[![Hot 100](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-hot-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-hot-100.yml)
 [![Billboard 200](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-200.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-200.yml)
 [![Billboard Global 200](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-200.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-200.yml)
 [![Billboard Global Excl Us](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-excl-us.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-global-excl-us.yml)
-[![Artist 100](https://github.com/koreanthinker/billboard-json/actions/workflows/artist-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/artist-100.yml)
+[![Artist 100](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-artist-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-artist-100.yml)
 [![Billboard Korea Hot 100](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-korea-hot-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/billboard-korea-hot-100.yml)
 [![Japan Hot 100](https://github.com/koreanthinker/billboard-json/actions/workflows/japan-hot-100.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/japan-hot-100.yml)
 [![Hot 100 Songwriters](https://github.com/koreanthinker/billboard-json/actions/workflows/hot-100-songwriters.yml/badge.svg)](https://github.com/koreanthinker/billboard-json/actions/workflows/hot-100-songwriters.yml)
@@ -21,7 +21,7 @@
 ### Main Charts
 - [Artist 100](https://www.billboard.com/charts/artist-100/)
 ```url
-https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/artist-100/recent.json
+https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/billboard-artist-100/recent.json
 ```
 - [Billboard 200](https://www.billboard.com/charts/billboard-200/)
 ```url
@@ -37,7 +37,7 @@ https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/billboard-gl
 ```
 - [Hot 100](https://www.billboard.com/charts/hot-100/)
 ```url
-https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/hot-100/recent.json
+https://raw.githubusercontent.com/KoreanThinker/billboard-json/main/billboard-hot-100/recent.json
 ```
 
 ### International Charts
