@@ -1,0 +1,40 @@
+name: Mainstream R&B Hip-Hop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '16,46 * * * *'
+
+jobs:
+  cron:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest]
+        node: ["16"]
+    name: Node ${{ matrix.node }} (${{ matrix.platform }})
+    runs-on: ${{ matrix.platform }}
+    defaults:
+      run:
+        working-directory: crawler
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install modules
+        run: yarn
+
+      - name: Run crawling
+        run: yarn mainstream-r-and-b-hip-hop
+      
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9.0.0
+        with:
+          author_name: Mainstream R&B Hip-Hop Crawler
+          message: 'Mainstream R&B Hip-Hop crawled at ${{ steps.date.outputs.date }}'
